@@ -1,4 +1,8 @@
 # Nova Publishable
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/creode/nova-publishable.svg?style=flat-square)](https://packagist.org/packages/creode/nova-publishable)
+[![Total Downloads](https://img.shields.io/packagist/dt/creode/nova-publishable.svg?style=flat-square)](https://packagist.org/packages/creode/nova-publishable)
+
 This package provides an integration between the [Laravel Publishable](https://github.com/jaymeh/laravel-publishable) package and Nova.
 
 ## Installation
