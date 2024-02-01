@@ -43,6 +43,31 @@ class Post extends Resource
 }
 ```
 
+### Publish/Unpublish Actions
+This package also provides actions to publish and unpublish resources. To use these, you must add the `Publishable` trait to your model as above.
+
+Then you can add the following actions to your Nova resource.
+
+```php
+use Creode\NovaPublishable\Actions\PublishAction;
+use Creode\NovaPublishable\Actions\UnpublishAction;
+
+class Post extends Resource
+{
+    // ...
+
+    public function actions(Request $request)
+    {
+        return [
+            // ...
+
+            new PublishAction,
+            new UnpublishAction,
+        ];
+    }
+}
+```
+
 ## Roadmap
 - [ ] Add tests with Dusk
 - [ ] Improve the field by allowing the user to schedule resources by specify a publishable date via a secondary field
