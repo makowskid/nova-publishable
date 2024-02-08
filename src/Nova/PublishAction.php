@@ -14,14 +14,16 @@ class PublishAction extends PublishableActionAbstract
     /**
      * {@inheritdoc}
      */
-    protected function process(Model $model): void {
+    protected function process(Model $model): void
+    {
         $model->publish();
     }
 
     /**
      * {@inheritdoc}
      */
-    protected function getActionName(): string {
+    protected function getActionName(): string
+    {
         return 'Published';
     }
 }
